@@ -1,0 +1,11 @@
+version: '3'
+services:
+  R:
+    image: chapmanbe/r-bn
+    environment:
+      - PASSWORD=ehealth
+    ports:
+      - "8776:8787"
+    volumes:
+      - /Users/brian/Code/R/MIMIC-Neurogenic-Shock:/home/rstudio/mimic
+
